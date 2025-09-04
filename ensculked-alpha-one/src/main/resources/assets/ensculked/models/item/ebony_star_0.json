@@ -1,0 +1,28 @@
+{
+  "parent": "ensculked:item/ebony_star",
+  "textures": {
+    "layer0": "ensculked:item/ebony_star_0"
+  },
+  "display": {
+    "firstperson_righthand": {
+      "rotation": [0, -270, 0],
+      "translation": [2, -10, -8],
+      "scale": [1.5, 1.5, 1]
+    },
+    "firstperson_lefthand": {
+      "rotation": [0, 270, 0],
+      "translation": [2, -10, -8],
+      "scale": [1.5, 1.5, 1]
+    },
+    "thirdperson_righthand": {
+      "rotation": [0, 90, -215],
+      "translation": [0, 0, 2.5],
+      "scale": [2, 2, 1]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [0, -90, 215],
+      "translation": [0, 0, 2.5],
+      "scale": [2, 2, 1]
+    }
+  }
+}

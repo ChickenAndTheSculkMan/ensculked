@@ -34,6 +34,7 @@ public class ModItemGroups {
                         entries.add(ModItems.RESONANT_CHESTPLATE);
                         entries.add(ModItems.RESONANT_LEGGINGS);
                         entries.add(ModItems.RESONANT_BOOTS);
+                        entries.add(ModItems.EBONY_STAR);
                     }).build());
     public static void registerItemGroups() {
         Ensculked.LOGGER.info("Registering item groups for " + Ensculked.MOD_ID);

@@ -2,10 +2,11 @@ package com.sculkman.ensculked;
 
 import com.sculkman.ensculked.block.ModBlocks;
 import com.sculkman.ensculked.effect.MobEffects;
+import com.sculkman.ensculked.entity.ModEntities;
 import com.sculkman.ensculked.item.ModItemGroups;
 import com.sculkman.ensculked.item.ModItems;
-import com.sculkman.ensculked.item.ModToolMaterials;
 import com.sculkman.ensculked.util.ModLootTableModifiers;
+import com.sculkman.ensculked.util.ModModelPredicates;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -29,6 +30,8 @@ public class Ensculked implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModLootTableModifiers.ModifyLootTables();
 		MobEffects.registerEffects();
+		ModModelPredicates.registerModelPredicates();
+		ModEntities.RegisterModEntites();
 
 		LOGGER.info("Hello Fabric world!");
 	}

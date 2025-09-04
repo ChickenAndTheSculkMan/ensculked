@@ -116,5 +116,34 @@
       }
     }
   },
+  "ebony_star": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "id": "ensculked:snatcher_recipe/ebonystarrecipe",
+      "pattern": [
+        "##x",
+        "#x#",
+        "oyy"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:reinforced_deepslate"
+        },
+        "y": {
+          "item": "minecraft:sculk"
+        },
+        "x": {
+          "item": "ensculked:heart_catalyst"
+        },
+        "o": {
+          "item": "minecraft:crossbow"
+        }
+      },
+      "result": {
+        "item": "ensculked:ebony_star"
+      }
+    }
+  },
   "hidden": true
 }

@@ -1,9 +1,7 @@
 package com.sculkman.ensculked.item;
 
 import com.sculkman.ensculked.Ensculked;
-import com.sculkman.ensculked.item.custom.ClawItemClass;
-import com.sculkman.ensculked.item.custom.ConsumeableItemClass;
-import com.sculkman.ensculked.item.custom.PraetorianItemClass;
+import com.sculkman.ensculked.item.custom.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
@@ -24,7 +22,7 @@ public class ModItems {
     public static final Item SOUL_SNATCHER = registerItem("soul_snatcher",
             new SwordItem(ModToolMaterials.ToolMaterials.CATALYST, 0, -1f, new FabricItemSettings().maxCount(1)));
     public static final Item PLAYER_SOUL = registerItem("player_soul", new Item(new FabricItemSettings()));
-    public static final Item SCULK_PILE = registerItem("sculk_pile", new Item(new FabricItemSettings()));
+    public static final Item SCULK_PILE = registerItem("sculk_pile", new EbonyStarAmmoClass(new FabricItemSettings()));
     public static final Item CLAW_OF_D = registerItem("claw_of_d",
             new ClawItemClass(ModToolMaterials.ToolMaterials.CATALYST, -2, 0f, new FabricItemSettings().maxCount(1)));
     public static final Item PRAETORIAN = registerItem("praetorian",
@@ -40,6 +38,8 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.RESONANT, ArmorItem.Type.LEGGINGS, new FabricItemSettings().maxCount(1)));
     public static final Item RESONANT_BOOTS = registerItem("resonant_boots",
             new ArmorItem(ModArmorMaterials.RESONANT, ArmorItem.Type.BOOTS, new FabricItemSettings().maxCount(1)));
+    public static final Item EBONY_STAR = registerItem("ebony_star", new EbonyStarItemClass(new FabricItemSettings().maxCount(1)));
+    public static final Item EMPTY_ITEM = registerItem("empty_item", new Item(new FabricItemSettings()));
 
 
     private static Item registerItem(String name, Item item) {

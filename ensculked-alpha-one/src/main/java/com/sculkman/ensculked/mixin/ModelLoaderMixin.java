@@ -34,5 +34,4 @@ public abstract class ModelLoaderMixin {
     public void addSculkMouthModel(BlockColors blockColors, Profiler profiler, Map<Identifier, JsonUnbakedModel> jsonUnbakedModels, Map<Identifier, List<ModelLoader.SourceTrackedData>> blockStates, CallbackInfo ci) {
         this.addModel(new ModelIdentifier(Ensculked.MOD_ID, "sculkmouth3d", "inventory"));
     }
-
 }

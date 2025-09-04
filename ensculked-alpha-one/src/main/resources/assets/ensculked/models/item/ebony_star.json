@@ -1,0 +1,56 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "ensculked:item/ebony_star"
+  },
+  "display": {
+    "firstperson_righthand": {
+      "rotation": [0, -270, 0],
+      "translation": [2, 3, -7],
+      "scale": [1.5, 1.5, 1]
+    },
+    "firstperson_lefthand": {
+      "rotation": [0, 270, 0],
+      "translation": [2, 3, -7],
+      "scale": [1.5, 1.5, 1]
+    },
+    "thirdperson_righthand": {
+      "rotation": [0, 90, -215],
+      "translation": [0, 0, 2.5],
+      "scale": [2, 2, 1]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [0, -90, 215],
+      "translation": [0, 0, 2.5],
+      "scale": [2, 2, 1]
+    }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "pulling": 1
+      },
+      "model": "ensculked:item/ebony_star_0"
+    },
+    {
+      "predicate": {
+        "pulling": 1,
+        "pull": 0.58
+      },
+      "model": "ensculked:item/ebony_star_1"
+    },
+    {
+      "predicate": {
+        "pulling": 1,
+        "pull": 1.0
+      },
+      "model": "ensculked:item/ebony_star_2"
+    },
+    {
+      "predicate": {
+        "charged": 1
+      },
+      "model": "ensculked:item/ebony_star_filled"
+    }
+  ]
+}
