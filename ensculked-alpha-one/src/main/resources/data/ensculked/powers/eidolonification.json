@@ -1,15 +1,47 @@
 {
   "type": "origins:action_on_hit",
   "bientity_action": {
-    "type": "origins:target_action",
-    "action": {
-      "type": "origins:apply_effect",
-      "effect": {
-        "effect": "ensculked:eidolon",
-        "duration": 200,
-        "amplifier": 0
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:target_action",
+        "action": {
+          "type": "origins:apply_effect",
+          "effects": [
+            {
+              "effect": "ensculked:eidolon",
+              "duration": 5,
+              "amplifier": 0,
+              "show_particles": false,
+              "show_icon": false,
+              "is_ambient": true
+            },
+            {
+              "effect": "ensculked:watched",
+              "duration": 24000,
+              "amplifier": 0,
+              "show_particles": false,
+              "show_icon": true,
+              "is_ambient": true
+            }
+            ]
+        }
+      },
+      {
+        "type": "origins:actor_action",
+        "action": {
+          "type": "origins:apply_effect",
+          "effect": {
+            "effect": "ensculked:hivemind",
+            "duration": 5,
+            "amplifier": 0,
+            "show_particles": false,
+            "show_icon": false,
+            "is_ambient": true
+          }
+        }
       }
-    }
+    ]
   },
   "name": "Eidolon",
   "description": "Hitting a mob will inflict them with Eidolon, a effect that steals xp from them. (Only works on players)"

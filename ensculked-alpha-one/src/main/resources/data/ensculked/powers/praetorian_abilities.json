@@ -1,13 +1,10 @@
 {
   "type": "origins:multiple",
   "praetorian_hit": {
-    "type": "origins:action_on_hit",
-    "bientity_action": {
-      "type": "origins:target_action",
-      "action": {
+    "type": "origins:target_action_on_hit",
+    "entity_action": {
         "type": "origins:execute_command",
-        "command": "execute unless @s[type=player] run function ensculked:infection_prime"
-      }
+        "command": "function ensculked:infection_prime"
     },
     "condition": {
       "type": "origins:equipped_item",
@@ -17,6 +14,33 @@
         "ingredient": {
           "item": "ensculked:praetorian"
         }
+      }
+    }
+  },
+  "praetorian_parry": {
+    "type": "origins:action_on_item_use",
+    "trigger": "instant",
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "command": "power grant @s ensculked:messenger/messenger_parryhidden"
+        },
+        {
+          "type": "origins:delay",
+          "ticks": 6,
+          "action": {
+            "type": "origins:execute_command",
+            "command": "power remove @s ensculked:messenger/messenger_parryhidden"
+          }
+        }
+      ]
+    },
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "item": "ensculked:praetorian"
       }
     }
   },

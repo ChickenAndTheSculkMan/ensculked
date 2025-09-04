@@ -4,4 +4,4 @@ playsound minecraft:block.sculk.charge hostile @a ~ ~ ~
 
 #Extra for the origin
 team join ensculked.ensculked @s
-power grant @e[type=!player,distance=..4,team=!ensculked.ensculked] ensculked:infected/infected_buildup
+power grant @e[type=!player,distance=..6,team=!ensculked.ensculked] ensculked:infected/infected_buildup

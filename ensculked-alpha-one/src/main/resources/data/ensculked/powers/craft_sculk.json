@@ -1,0 +1,120 @@
+{
+  "type": "origins:multiple",
+  "helmet": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "id": "ensculked:snatcher_recipe/resonanthelmetrecipe",
+      "pattern": [
+        "x#x",
+        "yoy",
+        "y#y"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:reinforced_deepslate"
+        },
+        "y": {
+          "item": "minecraft:sculk"
+        },
+        "x": {
+          "item": "ensculked:heart_catalyst"
+        },
+        "o": {
+          "item": "minecraft:netherite_helmet"
+        }
+      },
+      "result": {
+        "item": "ensculked:resonant_helmet"
+      }
+    }
+  },
+  "chestplate": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "id": "ensculked:snatcher_recipe/resonantchestplaterecipe",
+      "pattern": [
+        "x#x",
+        "yoy",
+        "y#y"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:reinforced_deepslate"
+        },
+        "y": {
+          "item": "minecraft:sculk"
+        },
+        "x": {
+          "item": "ensculked:heart_catalyst"
+        },
+        "o": {
+          "item": "minecraft:netherite_chestplate"
+        }
+      },
+      "result": {
+        "item": "ensculked:resonant_chestplate"
+      }
+    }
+  },
+  "leggings": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "id": "ensculked:snatcher_recipe/resonantleggingsrecipe",
+      "pattern": [
+        "x#x",
+        "yoy",
+        "y#y"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:reinforced_deepslate"
+        },
+        "y": {
+          "item": "minecraft:sculk"
+        },
+        "x": {
+          "item": "ensculked:heart_catalyst"
+        },
+        "o": {
+          "item": "minecraft:netherite_leggings"
+        }
+      },
+      "result": {
+        "item": "ensculked:resonant_leggings"
+      }
+    }
+  },
+  "boots": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "id": "ensculked:snatcher_recipe/resonantbootsrecipe",
+      "pattern": [
+        "x#x",
+        "yoy",
+        "y#y"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:reinforced_deepslate"
+        },
+        "y": {
+          "item": "minecraft:sculk"
+        },
+        "x": {
+          "item": "ensculked:heart_catalyst"
+        },
+        "o": {
+          "item": "minecraft:netherite_boots"
+        }
+      },
+      "result": {
+        "item": "ensculked:resonant_boots"
+      }
+    }
+  },
+  "hidden": true
+}

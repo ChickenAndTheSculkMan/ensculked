@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "ensculked:item/claw_of_d_texture"
+    "layer0": "ensculked:item/purifier"
   }
 }

@@ -9,16 +9,26 @@
     },
     "interval": 100,
     "condition": {
-      "type": "origins:in_block",
-      "block_condition": {
-        "type": "origins:offset",
-        "condition": {
-          "type": "origins:block",
-          "block": "minecraft:sculk"
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:in_block",
+          "block_condition": {
+            "type": "origins:offset",
+            "condition": {
+              "type": "origins:block",
+              "block": "minecraft:sculk"
+            },
+            "y": 1
+          }
         },
-        "y": 1
-      }
+        {
+          "type": "origins:gamemode",
+          "gamemode": "spectator"
+        }
+      ]
     }
+
   },
 
   "particles": {

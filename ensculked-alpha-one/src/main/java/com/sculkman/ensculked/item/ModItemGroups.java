@@ -29,6 +29,11 @@ public class ModItemGroups {
                         entries.add(ModBlocks.KEYMIND);
                         entries.add(ModItems.SCULK_MOUTH);
                         entries.add(ModItems.MUTATIONMESSENGER);
+                        entries.add(ModItems.PURIFIER);
+                        entries.add(ModItems.RESONANT_HELMET);
+                        entries.add(ModItems.RESONANT_CHESTPLATE);
+                        entries.add(ModItems.RESONANT_LEGGINGS);
+                        entries.add(ModItems.RESONANT_BOOTS);
                     }).build());
     public static void registerItemGroups() {
         Ensculked.LOGGER.info("Registering item groups for " + Ensculked.MOD_ID);

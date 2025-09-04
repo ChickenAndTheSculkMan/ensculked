@@ -6,7 +6,9 @@
     "ensculked:messenger/messenger_dash",
     "ensculked:messenger/messenger_parryactive",
     "ensculked:messenger/messenger_soulfuel",
-    "ensculked:messenger/messenger_armorless"
+    "ensculked:messenger/messenger_armorless",
+    "ensculked:messenger/messengerpact",
+    "ensculked:craft_sculk"
   ],
   "icon": "ensculked:mutation_messenger",
   "order": 10,

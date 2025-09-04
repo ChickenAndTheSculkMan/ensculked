@@ -15,9 +15,11 @@
 		"ensculked:claw_abilities",
 		"ensculked:prevents",
 		"ensculked:team_join",
-		"ensculked:praetorian_abilities"
+		"ensculked:praetorian_abilities",
+		"ensculked:phase_sculk",
+		"ensculked:craft_sculk"
 	],
-	"icon": "minecraft:sculk",
+	"icon": "ensculked:keymind",
 	"order": 10,
 	"impact": 3,
 	"unchoosable": true,

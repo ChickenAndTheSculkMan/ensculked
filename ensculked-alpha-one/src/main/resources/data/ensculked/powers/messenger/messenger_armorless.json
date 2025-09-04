@@ -1,10 +1,32 @@
 {
-  "type": "origins:attribute",
-  "modifier": {
-    "name": "Armorless Ensculked",
-    "attribute": "minecraft:generic.armor",
-    "value": -200,
-    "operation": "addition"
+  "type": "origins:restrict_armor",
+  "head": {
+    "type": "origins:ingredient",
+    "ingredient": {
+      "item": "ensculked:resonant_helmet"
+    },
+    "inverted": true
+  },
+  "chest": {
+    "type": "origins:ingredient",
+    "ingredient": {
+      "item": "ensculked:resonant_chestplate"
+    },
+    "inverted": true
+  },
+  "legs": {
+    "type": "origins:ingredient",
+    "ingredient": {
+      "item": "ensculked:resonant_leggings"
+    },
+    "inverted": true
+  },
+  "feet": {
+    "type": "origins:ingredient",
+    "ingredient": {
+      "item": "ensculked:resonant_boots"
+    },
+    "inverted": true
   },
   "name": "§3Mutation: Armorless",
   "description": "§bYou obtain no defensive beneffits from armor. (armor stat capped at 0)"

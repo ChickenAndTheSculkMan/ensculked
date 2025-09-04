@@ -80,9 +80,9 @@
       "type": "minecraft:crafting_shaped",
       "id": "ensculked:snatcher_recipe/praetorianrecipe",
       "pattern": [
-        " ox",
-        "yxo",
-        "xy "
+        "  x",
+        "yx ",
+        "oy "
       ],
       "key": {
         "y": {

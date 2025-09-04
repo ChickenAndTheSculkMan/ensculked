@@ -1,0 +1,113 @@
+{
+  "type": "origins:multiple",
+
+  "time": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 4,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+
+  "list": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "ensculked:infected/player/player_buildup_time",
+      "change": 1
+    },
+    "interval": 2399
+  },
+
+  "count": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:if_else_list",
+      "actions": [
+        {
+          "condition": {
+            "type": "origins:resource",
+            "resource": "ensculked:infected/player/player_buildup_time",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          "action": {
+            "type": "origins:execute_command",
+            "command": "function ensculked:player_infected/change1"
+          }
+        },
+        {
+          "condition": {
+            "type": "origins:resource",
+            "resource": "ensculked:infected/player/player_buildup_time",
+            "comparison": "==",
+            "compare_to": 2
+          },
+          "action": {
+            "type": "origins:execute_command",
+            "command": "function ensculked:player_infected/change2"
+          }
+        },
+        {
+          "condition": {
+            "type": "origins:resource",
+            "resource": "ensculked:infected/player/player_buildup_time",
+            "comparison": "==",
+            "compare_to": 3
+          },
+          "action": {
+            "type": "origins:execute_command",
+            "command": "function ensculked:player_infected/change3"
+          }
+        },
+        {
+          "condition": {
+            "type": "origins:resource",
+            "resource": "ensculked:infected/player/player_buildup_time",
+            "comparison": "==",
+            "compare_to": 4
+          },
+          "action": {
+            "type": "origins:execute_command",
+            "command": "function ensculked:player_infected/change4"
+          }
+        }
+      ]
+    },
+    "interval": 2400
+  },
+  "spread": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function ensculked:player_infected/player_spread"
+    },
+    "interval": 300,
+    "condition": {
+      "type": "origins:resource",
+      "resource": "ensculked:infected/player/player_buildup_time",
+      "comparison": "==",
+      "compare_to": 4
+    }
+  },
+  "cure": {
+    "type": "origins:action_on_item_use",
+    "trigger": "instant",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function ensculked:player_infected/cure"
+    },
+    "item_action": {
+      "type": "origins:consume",
+      "amount": 1
+    },
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "item": "ensculked:purifier"
+      }
+    }
+  },
+  "hidden": true
+}

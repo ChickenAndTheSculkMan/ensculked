@@ -1,0 +1,24 @@
+{
+  "type": "origins:multiple",
+
+  "pact": {
+    "type": "origins:recipe",
+    "recipe": {
+      "id": "ensculked:snatcher_recipe/pactrecipe",
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:writable_book"
+        },
+        {
+          "item": "ensculked:heart_catalyst"
+        }
+      ],
+      "result": {
+        "item": "ensculked:soul_book"
+      }
+    }
+  },
+
+  "hidden": true
+}

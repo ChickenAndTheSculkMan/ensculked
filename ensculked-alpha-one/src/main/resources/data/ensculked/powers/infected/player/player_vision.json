@@ -1,0 +1,43 @@
+{
+  "type": "origins:multiple",
+
+  "2": {
+    "type": "origins:shader",
+    "shader": "minecraft:shaders/post/desaturate.json"
+  },
+  "3": {
+    "type": "origins:shader",
+    "shader": "minecraft:shaders/post/pencil.json"
+  },
+  "4": {
+    "type": "origins:shader",
+    "shader": "minecraft:shaders/post/sobel.json"
+  },
+  "1skin": {
+    "type": "origins:model_color",
+    "red": 0.0,
+    "green": 0.0,
+    "blue": 0.95,
+    "alpha": 1.0
+  },
+  "2skin": {
+    "type": "origins:model_color",
+    "red": 0.0,
+    "green": 0.0,
+    "blue": 0.8,
+    "alpha": 1.0
+  },
+  "3skin": {
+    "type": "origins:model_color",
+    "red": 0.0,
+    "green": 0.0,
+    "blue": 0.7,
+    "alpha": 1.0
+  },
+  "4skin": {
+    "type": "apugli:entity_texture_overlay",
+    "texture_location": "ensculked:textures/item/sculk_infected.png",
+    "render_original_model": true
+  },
+  "hidden": true
+}

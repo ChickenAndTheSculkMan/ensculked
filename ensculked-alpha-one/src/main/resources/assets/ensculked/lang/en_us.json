@@ -11,6 +11,11 @@
   "item.ensculked.praetorian": "Praetorian",
   "item.ensculked.sculk_mouth": "Sculk Mouth",
   "item.ensculked.mutation_messenger": "Messengarium",
+  "item.ensculked.purifier": "Purifier",
+  "item.ensculked.resonant_helmet": "Resonant Helmet",
+  "item.ensculked.resonant_chestplate": "Resonant Chestplate",
+  "item.ensculked.resonant_leggings": "Resonant Leggings",
+  "item.ensculked.resonant_boots": "Resonant Boots",
 
   "itemgroup.ensculked": "Ensculked",
 
@@ -21,5 +26,7 @@
   "block.ensculked.soulstemlog": "Soulstem Log",
 
   "effect.ensculked.bleed": "Famine",
-  "effect.ensculked.eidolon": "Eidolon"
+  "effect.ensculked.eidolon": "Eidolon",
+  "effect.ensculked.watched": "Watching You",
+  "effect.ensculked.hivemind": "Devourer"
 }
